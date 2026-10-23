@@ -23,6 +23,15 @@ jobs:
     steps:
       - name: Obter projeto
         uses: actions/checkout@v6
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Instalar dependências
+        run: npm ci
+      - name: Gerar cliente Supabase
+        run: npm run build
       - name: Verificar JavaScript
         run: npm run check
       - name: Configurar Pages

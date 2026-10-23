@@ -4,17 +4,25 @@ Repositório: https://github.com/leiteneto17-cmd/site-pltattoo
 
 ## Publicação no GitHub Pages
 
-Em **Settings → Pages → Build and deployment → Source**, selecione **GitHub Actions** uma única vez. O fluxo `.github/workflows/pages.yml` verifica o JavaScript e publica somente a pasta `dist` após cada envio para `main`. Não há instalação de dependências nem compilação.
+GitHub Pages já foi ativado com **GitHub Actions**. O fluxo `.github/workflows/pages.yml` instala as dependências, gera o cliente do Supabase, verifica o JavaScript e publica somente a pasta `dist` após cada envio para `main`.
 
 Endereço previsto após a primeira publicação bem-sucedida: https://leiteneto17-cmd.github.io/site-pltattoo/
 
 Os endereços de imagens, CSS e scripts são relativos e funcionam sob `/site-pltattoo/` ou em um domínio próprio. Quando comprar o domínio, configure-o em **Settings → Pages → Custom domain**, verifique a propriedade e configure o DNS conforme a documentação do GitHub. Não há domínio próprio configurado nesta versão.
 
-## Supabase: próxima etapa opcional
+## Supabase: painel online
 
-O site atual usa arquivos locais e pode ser publicado sem banco. Supabase será útil para transformar o painel de rascunhos em um painel online: Auth para o acesso de Paulo, Postgres para artigos/estudos e Storage para imagens.
+O projeto usa a URL e a chave publicável informadas por Paulo. A string de conexão com `[YOUR-PASSWORD]` é apenas um modelo e não foi usada. Nenhuma senha ou chave secreta foi incluída no repositório.
 
-Para integrar depois: permitir ao público apenas ler registros publicados; reservar criação/edição/exclusão ao usuário administrador autenticado; configurar Row Level Security (RLS) nas tabelas e políticas nos arquivos. No navegador, usar somente URL do projeto e chave publicável. Nunca incluir chave secreta ou `service_role` no GitHub ou no JavaScript público. Não há conexão, banco ou conta Supabase configurados nesta versão.
+Para ativar o banco, abra o [SQL Editor do projeto](https://supabase.com/dashboard/project/yxgzsrvpvzpsxgzqxpsj/sql/new) e execute `supabase/schema.sql`. O arquivo cria `portfolio_entries`, libera leitura pública somente de itens publicados e limita escrita à conta autenticada `leiteneto17@gmail.com`.
+
+Em **Authentication → URL Configuration**, defina o endereço do site como `https://leiteneto17-cmd.github.io/site-pltattoo/` e permita como redirecionamento `https://leiteneto17-cmd.github.io/site-pltattoo/admin.html`. Assim o link de acesso enviado por e-mail retorna ao painel. Se usar um domínio próprio futuramente, adicione também o novo endereço à lista.
+
+Após a migração, abra `/admin.html`, clique em **Enviar link de acesso**, siga o link recebido e publique um item de teste. Artigos publicados aparecem em **Anotações**; estudos publicados aparecem na galeria. Imagens dos estudos são endereços HTTPS com descrição e crédito informados no painel. O armazenamento de arquivos ainda não foi integrado.
+
+Enquanto a tabela não estiver configurada, o site público mostra as demonstrações locais e o painel mantém seus rascunhos locais. Não importe conteúdo demonstrativo como trabalho autoral.
+
+A proteção das edições é aplicada no próprio banco por Row Level Security (RLS), além de o painel mostrar os controles apenas para o e-mail autorizado. Nunca inclua chave secreta ou `service_role` no GitHub ou no JavaScript público.
 
 Site responsivo em português, com assinatura visual Leite. Paulo é apresentado como aprendiz de mini realismo black & grey. Não existe agenda, orçamento, promessa de experiência profissional ou trabalho autoral inventado.
 
@@ -23,6 +31,8 @@ Site responsivo em português, com assinatura visual Leite. Paulo é apresentado
 Requer Node.js 20 ou superior. Abra um terminal nesta pasta e execute:
 
 ```sh
+npm ci
+npm run build
 npm start
 ```
 
