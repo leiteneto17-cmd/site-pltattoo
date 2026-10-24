@@ -4,6 +4,8 @@ Site: https://leiteneto17-cmd.github.io/site-pltattoo/
 
 O site é a apresentação de Paulo Leite e da assinatura visual Leite. Ele mostra a direção artística em estudo, referências e exemplos claramente identificados. Paulo ainda está aprendendo mini realismo em preto e cinza; o site não oferece agendamento nem orçamento.
 
+A identidade visual atual usa uma direção neoclássica de ateliê: carvão, papel, detalhes em bronze, tipografia expressiva e referências à escultura. A galeria demonstra como estudos futuros serão apresentados, sem atribuir exemplos a Paulo.
+
 ## Publicações
 
 O Instagram [@pauloleitesoaresneto](https://www.instagram.com/pauloleitesoaresneto/) é o canal principal para novos estudos e bastidores. O site encaminha visitantes para lá. Não é preciso usar o caderno de rascunhos para publicar no Instagram.
@@ -31,7 +33,8 @@ Abra http://127.0.0.1:4173/. Para parar, pressione Ctrl+C.
 ## Arquivos principais
 
 - `dist/index.html`: estrutura e textos do site.
-- `dist/style.css`: identidade visual e responsividade.
+- `dist/style.css`: estilos gerais do site e do painel.
+- `dist/neo.css`: identidade visual neoclássica e responsividade da página pública.
 - `dist/app.js`: galeria demonstrativa e comparador de contorno/volume.
 - `dist/assets/`: fotografia de referência e ilustrações demonstrativas.
 - `CREDITOS.md`: origem e direitos dos recursos visuais.
