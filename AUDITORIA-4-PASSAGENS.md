@@ -28,9 +28,11 @@
 
 **Antes:** o comparador de uma esfera de demonstração era a única interação; ele pouco explicava quem é Paulo.
 
-**Agora:** “Missão Traço Zero” tem quatro etapas jogáveis e um resultado. O fluxo usa botões, controle de intervalo, mouse/toque e botão alternativo para concluir o traço com teclado. A simulação acontece numa folha digital, com aviso de que não é formação para tatuar. O site e o jogo usam URLs relativas, apropriadas ao GitHub Pages.
+**Agora:** “Missão Traço Zero” tem quatro etapas jogáveis e um resultado. Após a primeira versão em folha digital, a cena foi refeita com corpo adulto ilustrado em 2D e duas artes black & grey originais de demonstração. O fluxo usa botões, controle de intervalo, arraste por mouse/toque e botão alternativo para concluir o traço com teclado. A seção explicita que não é formação para tatuar. O site e o jogo usam URLs relativas, apropriadas ao GitHub Pages.
 
 **Verificações:** scripts passaram na checagem sintática; home e jogo foram inspecionados em desktop e a missão foi concluída em navegador. O REA capturou a home móvel em 390×844 sem erros de página (evidência `ev_47811db86129e86eb486d5f50ffa2749fc4b48dbc00a72f342f430108544d81c`). A primeira captura móvel do jogo (`ev_345b0783a38861d3e22e981a977621efe6b10819561ca88ee21eae0b6f99395e`) revelou uma largura excessiva; a grade foi corrigida e outra captura (`ev_feb69406d7e901de535b141d72c141ca147426d6c2fced019b5a290040120268`) confirmou a correção. O diário anônimo retornou zero itens reais publicados, exibindo o estado vazio.
+
+Na revisão da simulação 2D, a missão foi concluída novamente no navegador; reinício, escolha da segunda arte e aviso de alinhamento também funcionaram. Uma captura REA em 390×844 mostrou o corpo e o painel dentro da largura da tela, sem erro de página. Os desenhos são conceitos demonstrativos: ainda será preciso substituir ou complementar com estudos autorais de Paulo para que o portfólio mostre trabalho próprio.
 
 ## Referências que influenciaram a decisão
 
@@ -38,6 +40,7 @@
 - [Bruno Simon](https://bruno-simon.com/): exemplo de portfólio em que explorar é parte do encontro com o criador. A missão de Leite é original, menor e funciona sem WebGL.
 - [Hakim El Hattab — Sinuous](https://lab.hakim.se/sinuous/01/): exemplo de interação curta e legível em navegador; não foi copiado.
 - [MDN — Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events): referência para mouse, toque e caneta no traço.
+- [Ink Studio: Tattoo Artist Simulator — página oficial na Steam](https://store.steampowered.com/app/1496170/Ink_Studio_Tattoo_Artist_Simulator/?cc=us&l=english): referência visual observada com REA para composição, estúdio e visualização 2D; sem reprodução de recursos do jogo.
 - [British Museum](https://www.britishmuseum.org/sites/default/files/2020-06/British-Museum_Egypt_Sudan_Newsletter6_2019_0.pdf), [The Met](https://www.metmuseum.org/art/collection/search/257640) e [The Henry Ford](https://www.thehenryford.org/collections/explore/articles/tatoo-history-at-thf): fontes dos três cartões editoriais.
 
 ## Parecer

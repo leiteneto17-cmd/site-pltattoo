@@ -8,7 +8,7 @@ A identidade combina pôster de tatuagem black & grey, arquivo de investigação
 
 - **Home responsiva:** apresentação, diário de progresso, minijogo, três linhas de curiosidade, rota de estudos e perfil.
 - **Diário público:** mostra itens do Supabase com `is_published=true` e `is_demo=false`. Itens reais publicados no painel `/admin.html` aparecem na home após atualizar a página. Rascunhos e demonstrações não são apresentados. Se não houver registros reais, o espaço mostra um estado vazio honesto. Não marque exemplos como publicados; itens publicados podem ser consultados pela API pública do projeto.
-- **Missão Traço Zero:** jogo original de quatro etapas com bancada digital, alinhamento de símbolo, escala de cinza e traço. Aceita mouse, toque e alternativa por botão para o traço. Não é treinamento técnico para tatuar.
+- **Missão Traço Zero:** jogo original de quatro etapas com duas artes conceituais, bancada digital, posicionamento sobre corpo adulto ilustrado em 2D, camadas visuais black & grey e acabamento ornamental. Aceita mouse, toque, controles de posição e alternativa por botão para o traço. Não é treinamento técnico para tatuar.
 - **Instagram:** é o canal principal dos posts; o site liga diretamente ao perfil. A integração automática com a API da Meta continua ausente porque ainda não há aplicativo autorizado. Nenhum token deve entrar no GitHub Pages.
 
 ## Rodar localmente
@@ -38,4 +38,4 @@ Artigos da home usam trechos de até 350 caracteres; o painel ainda não é um e
 - [AUDITORIA-4-PASSAGENS.md](AUDITORIA-4-PASSAGENS.md): diagnóstico e limites.
 - [PESQUISA.md](PESQUISA.md) e [CREDITOS.md](CREDITOS.md): referências e licença dos recursos.
 
-O símbolo de mariposa da capa é uma ilustração demonstrativa criada para o site, identificada como tal. Não foram usados personagens, logos, jogos ou artes de franquias.
+As imagens do jogo e o símbolo de mariposa da capa são demonstrações originais criadas para este site, identificadas como tal. Não representam obras ou tatuagens realizadas por Paulo. Não foram usados personagens, logos, jogos ou artes de franquias. A versão 2D tomou como referência apenas a apresentação visual da [página oficial de Ink Studio: Tattoo Artist Simulator](https://store.steampowered.com/app/1496170/Ink_Studio_Tattoo_Artist_Simulator/?cc=us&l=english) e a imagem fornecida pelo usuário; nenhuma captura, interface, arte ou código foi incorporado.

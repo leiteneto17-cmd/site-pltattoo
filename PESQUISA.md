@@ -1,6 +1,12 @@
 # Pesquisa e decisões — 24/10/2026
 
-> Este documento registra a pesquisa da versão de cartaz anterior. A evolução para **Arquivo do Traço** e o minijogo está em [AUDITORIA-4-PASSAGENS.md](AUDITORIA-4-PASSAGENS.md). A seção abaixo que diz que a página não lê o Supabase descreve a versão anterior; agora os itens reais marcados como publicados aparecem no diário da home.
+## Referência para a simulação 2D
+
+- A [página oficial de Ink Studio: Tattoo Artist Simulator](https://store.steampowered.com/app/1496170/Ink_Studio_Tattoo_Artist_Simulator/?cc=us&l=english) foi observada com REA em 24/10/2026 (evidência `ev_bfc4674d353bf011d01ea2e68dc1e6e1e40a5d69ba7d666ea7511e5e75ee840a`). As imagens de divulgação mostram uma mesa de composição, seleção da arte e da posição no corpo, controles em torno de uma visualização 2D e uma cena de estúdio. A página dizia “Coming soon” e não havia avaliações de jogadores; portanto, a análise considera **somente** o material divulgado, sem inferir funcionamento ou qualidade do jogo final.
+- A captura fornecida por Paulo mostrou um corpo 2D com uma guia pontilhada, paleta lateral e interação sobre a região das costas. Ela ajudou a definir escala e foco da cena. A imagem não foi reutilizada no site.
+- O minijogo próprio usa duas artes geradas para este portfólio, corpo ilustrado, posição controlada por arraste ou sliders e três efeitos visuais selecionáveis. O acabamento é um emblema ornamental com alternativa por botão. A obra, a interface e o código da referência externa não foram copiados. Não foi necessário instalar componentes de terceiros: o projeto usa HTML, CSS, SVG e JavaScript já presentes na base.
+
+Esta pesquisa começou na versão de cartaz e foi atualizada para **Arquivo do Traço**. A auditoria das mudanças está em [AUDITORIA-4-PASSAGENS.md](AUDITORIA-4-PASSAGENS.md).
 
 ## Portfólios e linguagem visual
 
@@ -25,7 +31,7 @@ A solução para Leite combina um cartaz contemporâneo com sinais de folha de f
 
 O perfil público foi consultado em 24/10/2026, mas mostrou uma janela de cadastro/login no lugar das publicações. Não havia links individuais de treinos verificados para incorporação. O perfil foi ligado diretamente como canal principal; nenhuma imagem de exemplo aparece como treino concluído. O cronograma é um roteiro sugerido, sem datas ou atividades falsamente concluídas. A integração automática com Instagram continua dependente de um aplicativo Meta autorizado e armazenamento seguro do token fora do site estático.
 
-O painel Supabase antigo permanece separado e experimental. A página pública não lê seus registros; os rótulos do painel foram corrigidos para não prometer publicação visível.
+O painel Supabase permanece separado. A página pública lê os registros reais marcados como publicados, filtra demonstrações e exibe um estado vazio quando não há estudos. Isso foi testado sem criar uma postagem fictícia como se fosse progresso de Paulo.
 
 ## Direitos e implementação
 
