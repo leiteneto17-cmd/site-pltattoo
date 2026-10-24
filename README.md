@@ -1,35 +1,41 @@
-# Leite — caderno visual de Paulo Leite
+# Leite — arquivo do traço
 
-Site publicado: https://leiteneto17-cmd.github.io/site-pltattoo/
+Site pessoal de Paulo Leite: [versão pública](https://leiteneto17-cmd.github.io/site-pltattoo/) · [minijogo](https://leiteneto17-cmd.github.io/site-pltattoo/game.html).
 
-Esta versão apresenta Paulo como artista em formação. O visual combina tipografia de cartaz, preto e cinza, acento vermelho, marcas gráficas e uma ilustração conceitual de mariposa claramente identificada como demonstração. Não há tatuagens ou estudos de treino falsamente atribuídos a Paulo, nem agendamento ou orçamentos.
+A identidade combina pôster de tatuagem black & grey, arquivo de investigação e linguagem de jogo. Paulo é apresentado como artista em formação. O site **não** afirma que ele já tatuou alguém e não oferece orçamento ou agenda.
 
-A página foi dividida em **treinos**, **curiosidades**, **história da arte**, **tatuagem & arte**, **cronograma de estudos** e **sobre**. Curiosidades e textos de pesquisa trazem links para suas fontes. O cronograma é um roteiro sugerido de quatro etapas, sem datas ou exercícios apresentados como concluídos.
+## O que funciona
 
-## Treinos e Instagram
+- **Home responsiva:** apresentação, diário de progresso, minijogo, três linhas de curiosidade, rota de estudos e perfil.
+- **Diário público:** mostra itens do Supabase com `is_published=true` e `is_demo=false`. Itens reais publicados no painel `/admin.html` aparecem na home após atualizar a página. Rascunhos e demonstrações não são apresentados. Se não houver registros reais, o espaço mostra um estado vazio honesto. Não marque exemplos como publicados; itens publicados podem ser consultados pela API pública do projeto.
+- **Missão Traço Zero:** jogo original de quatro etapas com bancada digital, alinhamento de símbolo, escala de cinza e traço. Aceita mouse, toque e alternativa por botão para o traço. Não é treinamento técnico para tatuar.
+- **Instagram:** é o canal principal dos posts; o site liga diretamente ao perfil. A integração automática com a API da Meta continua ausente porque ainda não há aplicativo autorizado. Nenhum token deve entrar no GitHub Pages.
 
-O Instagram [@pauloleitesoaresneto](https://www.instagram.com/pauloleitesoaresneto/) é o canal principal para novos registros. O site aponta para o perfil. A área de treinos não exibe miniaturas de posts porque ainda não há publicações selecionadas e verificadas para incorporar. A sincronização automática não está ativa: falta criar e autorizar um aplicativo Meta e guardar o token fora do GitHub Pages. Não inclua tokens no repositório.
+## Rodar localmente
 
-O painel em `/admin.html` continua disponível como arquivo experimental de textos e estudos no Supabase, mas o conteúdo dele não aparece automaticamente na página pública e não publica no Instagram. O painel local guarda apenas rascunhos no navegador.
-
-## Executar e publicar
-
-Requer Node.js 20 ou superior:
+Requer Node.js 20+.
 
 ```sh
 npm ci
 npm run build
+npm run check
 npm start
 ```
 
-Abra http://127.0.0.1:4173/. `npm run check` verifica os scripts. Cada envio à branch `main` aciona `.github/workflows/pages.yml` e publica `dist` no GitHub Pages. Um domínio próprio pode ser configurado depois em **Settings → Pages → Custom domain**.
+Abra `http://127.0.0.1:4173/`. A branch `main` publica `dist/` no GitHub Pages pela ação em `.github/workflows/pages.yml`.
 
-## Arquivos
+## Atualizar o diário
 
-- `dist/index.html`: conteúdo público.
-- `dist/ink.css`: identidade visual responsiva do site público.
-- `dist/style.css`: base comum e estilos do painel.
-- `dist/app.js`: comparador interativo de demonstração.
-- `dist/assets/`: ilustrações demonstrativas e fotografia de referência.
-- `CREDITOS.md`: origem e uso das imagens.
-- `PESQUISA.md`: referências verificadas e decisões visuais.
+Entre em `/admin.html` com o e-mail autorizado. Crie um artigo ou estudo real, deixe **É conteúdo demonstrativo** desmarcado e selecione **Publicar na página inicial**. Para um estudo com imagem, informe URL HTTPS pública, descrição e crédito. Confira o item na home após salvar. Rascunhos locais no fim do painel são apenas cópias no navegador.
+
+Artigos da home usam trechos de até 350 caracteres; o painel ainda não é um editor de matérias longas públicas. Para o registro de evolução, descreva data, referência, tentativa, aprendizado e próximo exercício. Não atribua imagens de referência a Paulo.
+
+## Projeto e referências
+
+- `dist/index.html`, `dist/mission.css`, `dist/progress.js`: página inicial.
+- `dist/game.html`, `dist/game.css`, `dist/game.js`: jogo.
+- `dist/admin.html`, `dist/online-admin.js`, `src/db.js`: painel e dados.
+- [AUDITORIA-4-PASSAGENS.md](AUDITORIA-4-PASSAGENS.md): diagnóstico e limites.
+- [PESQUISA.md](PESQUISA.md) e [CREDITOS.md](CREDITOS.md): referências e licença dos recursos.
+
+O símbolo de mariposa da capa é uma ilustração demonstrativa criada para o site, identificada como tal. Não foram usados personagens, logos, jogos ou artes de franquias.

@@ -1,5 +1,7 @@
 # Pesquisa e decisões — 24/10/2026
 
+> Este documento registra a pesquisa da versão de cartaz anterior. A evolução para **Arquivo do Traço** e o minijogo está em [AUDITORIA-4-PASSAGENS.md](AUDITORIA-4-PASSAGENS.md). A seção abaixo que diz que a página não lê o Supabase descreve a versão anterior; agora os itens reais marcados como publicados aparecem no diário da home.
+
 ## Portfólios e linguagem visual
 
 - [JARC. Tattoo](https://jarctattoo.com/) — inspecionado com REA (evidência ev_8a200dee6b4a445d00b0e8486985ae88737f5b665489ba0cfaea6f929e88ac69). O site usa fundo preto, título sans muito grande e poucos caminhos de navegação. Foi referência para presença tipográfica, não para conteúdo profissional.
