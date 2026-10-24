@@ -1,10 +1,12 @@
-const $=s=>document.querySelector(s);
-const demoStudies=[{title:'Anatomia de uma mariposa',category:'Animais',image:'assets/moth.svg',caption:'Ilustração digital de demonstração',body:'Composição vetorial criada para demonstrar a organização do portfólio. Não é desenho, tatuagem ou estudo realizado por Paulo.',demo:true},{title:'O peso da luz',category:'Estátuas',image:'assets/marble.jpg',caption:'Referência fotográfica · The Met',body:'Marble statue of a member of the imperial family. Escultura romana, 27 a.C.–68 d.C. The Metropolitan Museum of Art. Imagem de domínio público. Não é obra de Paulo. Fonte: https://www.metmuseum.org/art/collection/search/257640',demo:true},{title:'Forma antes do detalhe',category:'Simbólico',image:'assets/volume.svg',caption:'Exemplo digital · volume e espaço',body:'Esfera digital ilustrativa para testar a apresentação de composições. Não representa estudo autoral de Paulo. Substitua este exemplo quando houver material real.',demo:true}];
-let studies=demoStudies;
-function el(tag,text,cls){const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;}
-function show(title,body,image){const box=$('#detail-content');box.replaceChildren();if(image){const img=el('img');img.src=image;img.alt=title;box.append(img);}const h=el('h2',title);h.id='detail-title';box.append(h,el('p',body));$('#detail').showModal();}
-$('.close').onclick=()=>$('#detail').close();
-$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
-function gallery(filter='Todos'){const items=studies.filter(s=>filter==='Todos'||s.category===filter);$('#gallery').replaceChildren();items.forEach(s=>{const button=el('button',null,'study');const wrap=el('div',null,'study-image');const img=el('img');img.src=s.image;img.alt=s.image_alt||s.title+' — '+s.caption;img.loading='lazy';wrap.append(img,el('span',(s.demo?'DEMONSTRAÇÃO':'ESTUDO')+' / '+s.category.toUpperCase()));button.append(wrap,el('h3',s.title+' ↗'),el('small',s.caption));button.onclick=()=>show(s.title,s.body+(s.credit?'\n\nCrédito: '+s.credit:''),s.image);$('#gallery').append(button);});const examples=items.filter(s=>s.demo).length,originals=items.length-examples;$('#count').textContent=`${examples} ${examples===1?'exemplo':'exemplos'} · ${originals} ${originals===1?'estudo publicado':'estudos publicados'}`;}
-document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));gallery(b.dataset.filter);});gallery();
-$('#compare').oninput=e=>{const v=Number(e.target.value);$('#before').style.clipPath=`inset(0 ${100-v}% 0 0)`;$('#compare-line').style.left=v+'%';$('#position').value=v+'%';};
+const compare=document.getElementById('compare');
+if(compare){
+  const before=document.getElementById('before');
+  const line=document.getElementById('compare-line');
+  const position=document.getElementById('position');
+  compare.addEventListener('input',()=>{
+    const value=Number(compare.value);
+    before.style.clipPath='inset(0 '+(100-value)+'% 0 0)';
+    line.style.left=value+'%';
+    position.value=value+'%';
+  });
+}

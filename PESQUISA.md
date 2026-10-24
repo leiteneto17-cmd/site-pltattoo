@@ -1,30 +1,30 @@
-# Pesquisa e decisões — 23/10/2026
+# Pesquisa e decisões — 24/10/2026
 
-## Referências visuais
+## Portfólios e linguagem visual
 
-- [Awwwards — Photography](https://www.awwwards.com/websites/photography/): coleção consultada para referências contemporâneas de portfólio e protagonismo da imagem. Decisão própria para Leite: composição editorial, contraste entre serifas expressivas e texto simples, margens generosas, navegação curta e contato pelo Instagram. Nenhum layout ou código de outro portfólio foi copiado.
-- [The Met — escultura romana](https://www.metmuseum.org/art/collection/search/257640): fonte pública da fotografia demonstrativa. O catálogo marca a imagem como Public Domain. A referência é pertinente ao interesse em estátuas e volume, sem retratos realistas de pessoas.
-- [Vasa Tattoo — portfolio](https://www.glennvasaturo.com/tattoo-portfolio): observado com REA em 23/10/2026 (evidência `ev_eb00e939fdd7b253b7a6553e1fc5eb4f66b78477311bc167bdbd8a18d86a2ee0`). A hierarquia dá protagonismo às imagens black & grey e oferece ampliação das peças.
-- [Dragoness Tattoo — portfolio](https://dragoness.ink/portfolio): observado com REA em 23/10/2026 (evidência `ev_e988828187a1f07be029632a213d83a3ef908d80679ef01975907a4200bf078a`). Títulos grandes, fundo escuro, pequenos metadados e galeria organizada foram pistas úteis para definir ritmo visual. A captura de tela estava encoberta por um estado de carregamento, então a observação desta página se baseou principalmente na árvore de acessibilidade.
+- [JARC. Tattoo](https://jarctattoo.com/) — inspecionado com REA (evidência ev_8a200dee6b4a445d00b0e8486985ae88737f5b665489ba0cfaea6f929e88ac69). O site usa fundo preto, título sans muito grande e poucos caminhos de navegação. Foi referência para presença tipográfica, não para conteúdo profissional.
+- [donker.](https://donkerartist.com/) — inspecionado com REA (evidência ev_72a14603cfd06bebdda3def785749f9bbfb94d1017fd341e5f0528dcd625bea0). O portfólio usa identidade curta e forte, preto, luz e cor de contraste. A versão de Leite usa composição e cores próprias.
+- [Art by Lobo](https://artbylobo.com/) — inspecionado com REA (evidência ev_64e5d133557abfa0f96db6fd7f1f3dfeaf047e67e40733bd8f9f304f7dd83ff9). A página dá escala à marca e à imagem; também ajudou a identificar o que evitar para Paulo: fotografias de tatuagens de terceiros e chamadas de agendamento.
+- [Tattoodo — artigos](https://www.tattoodo.com/articles/) — referência de separação editorial por temas de tatuagem, entrevistas e guias. Nenhum texto ou imagem foi copiado.
 
-A revisão visual adotou uma direção própria de ateliê neoclássico: fundo carvão, papel antigo, bronze discreto, tipografia monumental e moldura inspirada em acervos. Não foram copiados fotografias, obras, código ou afirmações profissionais dos portfólios de referência.
+A solução para Leite combina um cartaz contemporâneo com sinais de folha de flash: tipografia condensada, preto e cinza, vermelho de marcação, pequenos números de arquivo e uma mariposa vetorial demonstrativa criada para o projeto. A escultura deixou de ocupar a capa e foi para história da arte. A página separa claramente treinos reais, pesquisa e roteiro futuro.
 
-## Componentes open-source avaliados
+## Fontes dos textos públicos
 
-| Componente | Fonte | Aplicação | Decisão nesta versão |
-| --- | --- | --- | --- |
-| PhotoSwipe | https://photoswipe.com/getting-started/ e https://github.com/dimsemenov/PhotoSwipe | Galeria com ampliação e navegação por imagens | Candidato para uma coleção real maior. V1 usa dialog nativo para três exemplos. |
-| img-comparison-slider | https://github.com/sneas/img-comparison-slider | Comparação de imagens antes/depois; projeto MIT | Referência de interação; V1 implementa o caso simples com range nativo e recorte CSS, sem copiar código. |
-| Tiptap | https://tiptap.dev/open-source-to-platform | Núcleo de editor rico open-source MIT | Adiado até existir necessidade de texto formatado e CMS. V1 usa texto simples, renderizado com textContent. |
+- [British Museum — pesquisa sobre as múmias de Gebelein](https://www.britishmuseum.org/sites/default/files/2020-06/British-Museum_Egypt_Sudan_Newsletter6_2019_0.pdf): curadores descrevem os motivos animais revelados por infravermelho e a datação aproximada. A nota do site é um resumo curto, com link direto para a fonte.
+- [The Henry Ford — Percy Waters e folhas de flash](https://www.thehenryford.org/collections/explore/articles/tatoo-history-at-thf): acervo e explicação do papel das folhas de desenhos.
+- [Wellcome Collection — história da tatuagem](https://wellcomecollection.org/stories/a-brief-history-of-tattoos): diversidade de práticas e sentidos culturais. A nota do site evita atribuir uma origem única.
+- [The Met — escultura romana](https://www.metmuseum.org/art/collection/search/257640): fotografia identificada pelo museu como domínio público; crédito preservado no site e em CREDITOS.md.
+- [The Met — Caravaggio](https://www.metmuseum.org/toah/hd/crvg/hd_crvg.htm): texto sobre uso dramático da luz e proximidade das figuras.
+- [Tattoodo — black & grey](https://www.tattoodo.com/tattoos/ideas/black-and-grey-tattoos): exemplos da linguagem visual; nenhuma imagem desses artistas foi reproduzida.
+- [Smithsonian National Air and Space Museum — acervo de flash](https://www.smithsonianmag.com/blogs/air-space-museum/2020/10/05/body-art-during-world-war-ii-lyle-tuttle-tattoo-art-collection/): discussão de folhas de flash como documentos de estilo e época.
 
-Não foram incorporados esses pacotes. A pesquisa orientou o escopo e evita adicionar infraestrutura antes de haver material autoral. Antes de uma futura integração, fixar versão, conferir a licença dessa versão e preservar avisos; recursos pagos de uma plataforma não se tornam livres por o núcleo ser open-source.
+## Treinos e publicação
 
-## REA
+O perfil público foi consultado em 24/10/2026, mas mostrou uma janela de cadastro/login no lugar das publicações. Não havia links individuais de treinos verificados para incorporação. O perfil foi ligado diretamente como canal principal; nenhuma imagem de exemplo aparece como treino concluído. O cronograma é um roteiro sugerido, sem datas ou atividades falsamente concluídas. A integração automática com Instagram continua dependente de um aplicativo Meta autorizado e armazenamento seguro do token fora do site estático.
 
-Usado para observar o comportamento e a organização pública dos dois portfólios acima, a pedido de Paulo. Os resultados são evidência de referência visual, não licença para reutilizar conteúdo. A nova versão local foi conferida no navegador em telas móvel e desktop (evidência `ev_2b7df319d2ff2339a8ab3180e412d46f8896f0e71f3ef86fe0462e63173117bc`).
+O painel Supabase antigo permanece separado e experimental. A página pública não lê seus registros; os rótulos do painel foram corrigidos para não prometer publicação visível.
 
-## Prioridades seguintes
+## Direitos e implementação
 
-1. Substituir demonstrações por estudos reais, preservando datas e créditos das referências.
-2. Acrescentar fotografia pessoal autorizada, se desejado.
-3. Integrar publicações do Instagram pela API oficial somente depois da criação e autorização do aplicativo Meta, mantendo credenciais fora do site público.
+O SVG da capa e o comparador foram criados para este projeto e rotulados como demonstração. Não se copiou código, fotografias nem trabalhos dos portfólios observados. A nova página foi revista em desktop e celular; menu, seções, links e comparador foram testados. O arquivo original de pesquisa de 23/10/2026 foi substituído porque descrevia a direção neoclássica anterior.
