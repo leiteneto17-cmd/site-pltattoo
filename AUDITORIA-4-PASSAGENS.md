@@ -28,11 +28,13 @@
 
 **Antes:** o comparador de uma esfera de demonstração era a única interação; ele pouco explicava quem é Paulo.
 
-**Agora:** “Missão Traço Zero” tem quatro etapas jogáveis e um resultado. Após a primeira versão em folha digital, a cena foi refeita com corpo adulto ilustrado em 2D e duas artes black & grey originais de demonstração. O fluxo usa botões, controle de intervalo, arraste por mouse/toque e botão alternativo para concluir o traço com teclado. A seção explicita que não é formação para tatuar. O site e o jogo usam URLs relativas, apropriadas ao GitHub Pages.
+**Agora:** “Missão Traço Zero” tem quatro etapas jogáveis e um resultado. A cena usa corpo adulto ilustrado em 2D e duas artes black & grey originais de demonstração. A bancada mostra seis objetos cenográficos que podem ser arrastados ou colocados por toque, com escolha visual de tinta e máquina. Na etapa final, a linha nasce do movimento real do mouse, caneta, dedo ou setas do teclado; o jogo mede precisão e desvios em vez de avançar pontos automaticamente. A seção explicita que não é formação para tatuar. O site e o jogo usam URLs relativas, apropriadas ao GitHub Pages.
 
 **Verificações:** scripts passaram na checagem sintática; home e jogo foram inspecionados em desktop e a missão foi concluída em navegador. O REA capturou a home móvel em 390×844 sem erros de página (evidência `ev_47811db86129e86eb486d5f50ffa2749fc4b48dbc00a72f342f430108544d81c`). A primeira captura móvel do jogo (`ev_345b0783a38861d3e22e981a977621efe6b10819561ca88ee21eae0b6f99395e`) revelou uma largura excessiva; a grade foi corrigida e outra captura (`ev_feb69406d7e901de535b141d72c141ca147426d6c2fced019b5a290040120268`) confirmou a correção. O diário anônimo retornou zero itens reais publicados, exibindo o estado vazio.
 
 Na revisão da simulação 2D, a missão foi concluída novamente no navegador; reinício, escolha da segunda arte e aviso de alinhamento também funcionaram. Uma captura REA em 390×844 mostrou o corpo e o painel dentro da largura da tela, sem erro de página. Os desenhos são conceitos demonstrativos: ainda será preciso substituir ou complementar com estudos autorais de Paulo para que o portfólio mostre trabalho próprio.
+
+Na revisão do controle livre, o Photopea foi observado com REA como referência de interface de desenho (evidência `ev_1fd7b795451d7b321b9993c07d9e7db1d4fa9155adefd7d03ad2b133f8b2a850`). A bancada passou no teste de arraste e nas escolhas de tinta e máquina. O contorno completo da mariposa foi concluído com percurso real, pontuação e precisão; um desvio gerou penalidade. Uma captura móvel da abertura em 390×844 não mostrou erro de página (evidência `ev_cf3c4acc91ef8568c2037db45c76e23c9a8a4eb0889163b85ef5044b2c5f9683`).
 
 ## Referências que influenciaram a decisão
 
