@@ -19,9 +19,9 @@
   <path d="M286 453c-25 15-46 38-55 67m183-67c25 15 46 38 55 67M346 280c-19-58-38-86-70-92m78 92c19-58 38-86 70-92" fill="none" stroke="#1d1c1a" stroke-width="3" stroke-linecap="round"/>
   <ellipse cx="350" cy="422" rx="20" ry="134" fill="#1b1a18" stroke="#1b1a18" stroke-width="3"/>
   <path d="M348 344v161M337 393h26M337 430h26M338 467h24" stroke="#b8b1a4" stroke-width="2" opacity=".75"/>
-  <path d="M350 135v58M350 650v58M52 422h76M572 422h76" stroke="#426b31" stroke-width="2"/>
-  <circle cx="350" cy="421" r="7" fill="#426b31"/>
+  <path d="M350 135v58M350 650v58M52 422h76M572 422h76" stroke="#9e6b52" stroke-width="2"/>
+  <circle cx="350" cy="421" r="7" fill="#9e6b52"/>
   <text x="47" y="53" fill="#20201d" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="5">LEITE / ESTUDO 001</text>
   <text x="47" y="813" fill="#4e4942" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">ILUSTRAÇÃO GRÁFICA DEMONSTRATIVA · NÃO AUTORAL</text>
-  <text x="620" y="813" fill="#426b31" font-family="Arial,sans-serif" font-size="12" font-weight="700">PL/01</text>
+  <text x="620" y="813" fill="#9e6b52" font-family="Arial,sans-serif" font-size="12" font-weight="700">PL/01</text>
 </svg>
